@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: #f3f5f9;
+}
+
+.app {
+    width: 95%;
+    margin: 20px auto;
+    background: white;
+    display: flex;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 80px;
+    background: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 22px;
+}
+
+.logo {
+    width: 46px;
+    height: 46px;
+    background: #2563eb;
+    color: white;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 6px;
+    margin-top: 150px;
+}
+
+.logo:hover {
+    transform: rotate(15deg) scale(1.15);
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+    background: #e5e7eb;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.15);
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 25px;
+}
+
+.top {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.filter {
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    background: #eef2f7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* CATEGORIES */
+.categories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.categories button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background: #e5e7eb;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.categories button:hover {
+    transform: translateY(-3px);
+}
+
+.categories .active {
+    background: #2563eb;
+    color: white;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 18px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* QTY */
+.qty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.qty button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background: #e5e7eb;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.qty button:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.1);
+}
+
+.price {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* ORDER */
+.order {
+    width: 320px;
+    background: #fafafa;
+    padding: 25px;
+    border-left: 1px solid #eee;
+}
+
+.order h2 {
+    font-size: 22px;
+}
+
+.table {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* DINE ORDER */
+.dine-order {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.dine-order button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #e5e7eb;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dine-order button:hover {
+    transform: translateY(-3px);
+}
+
+.dine-order .active {
+    background: #2563eb;
+    color: white;
+}
+
+/* ORDER ITEMS */
+.order-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.order-item img {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.order-item span {
+    font-size: 12px;
+    color: gray;
+}
+
+/* SUMMARY */
+.summary {
+    border-top: 1px dashed #ccc;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.summary div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+/* PLACE ORDER */
+.place {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.place:hover {
+    transform: translateY(-4px) scale(1.05);
+    background: #1d4ed8;
+}
+
+.filter {
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    background: #0055be;
+    cursor: pointer;
+    transition: 0.3s;
+    color: red;
+}
